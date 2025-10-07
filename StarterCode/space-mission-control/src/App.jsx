@@ -1,3 +1,6 @@
+import styles from "./App.module.css";
+import MissionControl from "./components/MissionControl.jsx";
+
 function App() {
   const INITIAL_MISSIONS = [
     { id: 1, name: "Mars Rover", status: "Planned", crew: ["Alice", "Bob"] },
@@ -52,7 +55,11 @@ function App() {
     },
   ];
 
-  return <></>;
+  return (
+    <div className={styles.mainContainer}>
+      <MissionControl initialMissions={INITIAL_MISSIONS} />
+    </div>
+  );
 }
 
 export default App;
