@@ -25,3 +25,5 @@ function MissionAction({ missionId, onUpdateMissionStatus }) {
     </>
   );
 }
+
+export default MissionAction;

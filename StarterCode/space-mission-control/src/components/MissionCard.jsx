@@ -9,3 +9,5 @@ function MissionCard({ name, status, crew }) {
     </>
   );
 }
+
+export default MissionCard;
